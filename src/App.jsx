@@ -1,7 +1,8 @@
-const App = () => {
-  return (
-    <h1>Cosmin's Portfolio</h1>
-  )
-}
+import Navbar from "./Components/Navbar"
 
+const App = () => {
+      return (
+       <Navbar/>
+      )
+    }
 export default App
