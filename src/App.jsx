@@ -1,8 +1,12 @@
+import Hero from "./Components/Hero"
 import Navbar from "./Components/Navbar"
 
 const App = () => {
       return (
-       <Navbar/>
+      <>
+        <Navbar/>
+        <Hero/>
+      </>
       )
     }
 export default App
