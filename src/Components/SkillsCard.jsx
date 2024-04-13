@@ -1,10 +1,10 @@
 
 import React from 'react'
 
-const SkillsCard = ({icon, title,text}) => {
+const SkillsCard = ({icon, title,text,href}) => {
   return (
     <article>
-      <span>{icon}</span>
+      <span><a href={href}>{icon}</a></span>
       <h4 className='mt-6 font-bold text-slate-200'>
         {title}
       </h4>
