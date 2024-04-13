@@ -10,13 +10,13 @@ export const links = [
 ];
 
 export const skills = [
-  {
-    id: nanoid(),
-    title: 'HTML&CSS',
-    icon: <FaHtml5 className='h-16 w-16 text-orange-500 hover:text-slate-200 duration-300 cursor-pointer' />,
-    text: 'Highly skilled in HTML & CSS, adeptly crafting visually appealing and responsive websites for optimal user experiences.',
-    href:"https://github.com/CosminDarius1?tab=repositories&q=HTML&type=&language=&sort=",
-  },
+  // {
+  //   id: nanoid(),
+  //   title: 'HTML&CSS',
+  //   icon: <FaHtml5 className='h-16 w-16 text-orange-500 hover:text-slate-200 duration-300 cursor-pointer' />,
+  //   text: 'Highly skilled in HTML & CSS, adeptly crafting visually appealing and responsive websites for optimal user experiences.',
+  //   href:"https://github.com/CosminDarius1?tab=repositories&q=HTML&type=&language=&sort=",
+  // },
   {
     id: nanoid(),
     title: 'Javascript',
@@ -31,13 +31,13 @@ export const skills = [
     text: 'Advanced proficiency in React, developing efficient and interactive front-end applications with a strong emphasis on component-based architecture.',
     href:'https://github.com/CosminDarius1?tab=repositories&q=React&type=&language=&sort=',
   },
-  {
-    id: nanoid(),
-    title: 'NodeJS',
-    icon: <FaNodeJs className='h-16 w-16 text-orange-500 hover:text-slate-200 duration-300 cursor-pointer' />,
-    text: 'Proficient in crafting efficient server-side applications with Node.js, specializing in building RESTful APIs, seamless database integration, and real-time communication implementations.',
-    href:'https://github.com/CosminDarius1?tab=repositories&q=robot&type=&language=&sort=',
-  },
+  // {
+  //   id: nanoid(),
+  //   title: 'NodeJS',
+  //   icon: <FaNodeJs className='h-16 w-16 text-orange-500 hover:text-slate-200 duration-300 cursor-pointer' />,
+  //   text: 'Proficient in crafting efficient server-side applications with Node.js, specializing in building RESTful APIs, seamless database integration, and real-time communication implementations.',
+  //   href:'https://github.com/CosminDarius1?tab=repositories&q=robot&type=&language=&sort=',
+  // },
   {
     id: nanoid(),
     title: 'PHP',
@@ -59,13 +59,13 @@ export const skills = [
     text: 'Skilled in MySQL database management, proficient in designing schemas, optimizing queries, and ensuring data integrity.',
     href:'https://github.com/CosminDarius1?tab=repositories&q=mysql&type=&language=&sort=',
   },
-  {
-    id: nanoid(),
-    title: 'Git',
-    icon: <FaGit className='h-16 w-16 text-orange-500 hover:text-slate-200 duration-300 cursor-pointer' />,
-    text: 'Proficient in Git for version control, with experience in branching, merging, and collaboration. Familiar with CI/CD pipelines for automated software delivery.',
-    href:'https://github.com/CosminDarius1?tab=repositories&q=circleci&type=&language=&sort=',
-  },
+  // {
+  //   id: nanoid(),
+  //   title: 'Git',
+  //   icon: <FaGit className='h-16 w-16 text-orange-500 hover:text-slate-200 duration-300 cursor-pointer' />,
+  //   text: 'Proficient in Git for version control, with experience in branching, merging, and collaboration. Familiar with CI/CD pipelines for automated software delivery.',
+  //   href:'https://github.com/CosminDarius1?tab=repositories&q=circleci&type=&language=&sort=',
+  // },
 
   // {
   //   id: nanoid(),
