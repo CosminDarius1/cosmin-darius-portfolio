@@ -37,7 +37,7 @@ useEffect(() => {
             <div className="hidden sm:flex gap-x-3">
                 {links.map((link)=>{
                 const {id,href,text} = link 
-                return <a key={id} href={href} className='capitalize text-lg tracking-wide hover:text-orange-900 duration-300 px-2'>
+                return <a key={id} href={href} className='capitalize text-lg tracking-wide hover:text-slate-200 duration-300 px-2'>
                     {text}
                 </a>
             })}
@@ -56,7 +56,7 @@ useEffect(() => {
                 {links.map((link) => {
                     const { id, href, text } = link;
                     return (
-                        <a key={id} href={href} className='block capitalize text-lg tracking-wide hover:text-orange-900 duration-300' onClick={handleMenuButtonClick}>
+                        <a key={id} href={href} className='block capitalize text-lg tracking-wide hover:text-slate-200 duration-300' onClick={handleMenuButtonClick}>
                             {text}
                         </a>
                     );
