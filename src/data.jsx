@@ -1,6 +1,16 @@
 import { nanoid } from 'nanoid';
 import { FaBootstrap, FaHtml5, FaJs, FaReact } from 'react-icons/fa';
 import { FaArrowsSplitUpAndLeft, FaDatabase, FaGit, FaNodeJs, FaPhp, FaS } from 'react-icons/fa6';
+import academyServer from './assets/academyserver.png';
+import caterpillarImg from '../src/assets/caterpillar.png';
+import caterpillarImg2 from '../src/assets/caterpillar2.png';
+import cMail from '../src/assets/cmail.png';
+import coshHomepage from '../src/assets/coshhomepage.png';
+import coshIndividual from '../src/assets/coshindividual.png'
+import guessNr1 from '../src/assets/guess1.png';
+import guessNr2 from '../src/assets/guess2.png'
+import phpProject from '../src/assets/phpproject.png';
+import phpProject2 from '../src/assets/phpproject2.png';
 
 export const links = [
   { id: nanoid(), href: '#home', text: 'home' },
@@ -84,7 +94,7 @@ export const skills = [
 export const projects = [
   {
     id: nanoid(),
-    img: 'https://images.pexels.com/photos/326503/pexels-photo-326503.jpeg?auto=compress&cs=tinysrgb&w=800',
+    img: academyServer,
     url: 'https://react-projects.netlify.app/',
     github: 'https://github.com/john-smilga',
     title: 'first project',
@@ -92,7 +102,7 @@ export const projects = [
   },
   {
     id: nanoid(),
-    img: 'https://images.pexels.com/photos/2148222/pexels-photo-2148222.jpeg?auto=compress&cs=tinysrgb&w=800',
+    img: caterpillarImg,
     url: 'https://react-projects.netlify.app/',
     github: 'https://github.com/john-smilga',
     title: 'second project',
@@ -100,7 +110,31 @@ export const projects = [
   },
   {
     id: nanoid(),
-    img: 'https://images.pexels.com/photos/12883026/pexels-photo-12883026.jpeg?auto=compress&cs=tinysrgb&w=800',
+    img: cMail,
+    url: 'https://react-projects.netlify.app/',
+    github: 'https://github.com/john-smilga',
+    title: 'third project',
+    text: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores aperiam porro impedit tenetur quo hic omnis doloribus dolores enim deleniti.',
+  },
+  {
+    id: nanoid(),
+    img: coshHomepage,
+    url: 'https://react-projects.netlify.app/',
+    github: 'https://github.com/john-smilga',
+    title: 'third project',
+    text: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores aperiam porro impedit tenetur quo hic omnis doloribus dolores enim deleniti.',
+  },
+  {
+    id: nanoid(),
+    img: phpProject,
+    url: 'https://react-projects.netlify.app/',
+    github: 'https://github.com/john-smilga',
+    title: 'third project',
+    text: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores aperiam porro impedit tenetur quo hic omnis doloribus dolores enim deleniti.',
+  },
+  {
+    id: nanoid(),
+    img: guessNr1,
     url: 'https://react-projects.netlify.app/',
     github: 'https://github.com/john-smilga',
     title: 'third project',
