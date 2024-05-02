@@ -98,8 +98,13 @@ export const projects = [
     img: academyServer,
     url: 'https://react-projects.netlify.app/',
     github: 'https://github.com/john-smilga',
-    title: 'first project',
-    text: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores aperiam porro impedit tenetur quo hic omnis doloribus dolores enim deleniti.',
+    title: 'Academy Portal',
+    text: 'A collaborative full-stack project at iO Academy, where students contribute by implementing new features and fixing bugs.',
+    text2:'My primary task involved enhancing security by enabling Admins to lock specific fields, preventing unauthorized edits by students.',
+    text3:'Engaged with legacy code, I integrated new JavaScript and PHP code, ensuring compatibility with existing legacy code',
+    text4:'While working on the back-end, I adhered to the MVC design pattern architecture',
+    text5:'Incorporated Continous Integration practices using CircleCI.This enabled real-time error detection, ensuring smooth development and deployment processes',
+    text6:'Technologies used:HTML5, Boostrap3, JavaScript, PHP, MySQL, MVC Design pattern,Git,CircleCI'
   },
   {
     id: nanoid(),
