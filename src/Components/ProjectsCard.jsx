@@ -3,8 +3,8 @@ import { FaGithubSquare,FaLinkedin,FaEnvelope } from 'react-icons/fa';
 import { TbWorldWww } from 'react-icons/tb';
 const ProjectsCard = ({url,img,github,title,text}) => {
   return (
-    <article className='bg-black rounded-lg shadow-md hover:shadow-xl duration-300 border border-zinc-400'>
-      <img src={img} alt={title} className='w-full max-h-48 object-cover rounded-t-lg transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300'/>
+    <article className='bg-black rounded-lg shadow-md hover:shadow-xl duration-300 border border-zinc-400 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 cursor-pointer shadow-zinc-400 hover:shadow-zinc-500'>
+      <img src={img} alt={title} className='w-full max-h-48 object-cover rounded-t-lg'/>
       <div className='capitalize p-8'>
         <h2 className='text-xl tracking-wide font-medium text-orange-500'>{title}</h2>
         <p className='mt-4 text-slate-200 leading-loose'>{text}</p>
