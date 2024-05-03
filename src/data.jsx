@@ -108,37 +108,16 @@ export const projects = [
   },
   {
     id: nanoid(),
-    img: caterpillarImg,
-    url: 'https://2023-jul-caterpillar-countdown.dev.io-academy.uk/',
-    gitUrl: 'https://github.com/iO-Academy/jul-23-caterpillar-countdown',
-    title: 'Caterpillar Countdown',
-    text: 'JavaScript-based browser game for testing mental agility, where users click numbers in ascending order within a time limit.',
-    text2:'Implemented logic to generate 3 to 5 random numbers each time the player clicked the correct boxes in ascending order. This dynamic feature enhanced gameplay by offering varied challenges as players progressed.',
-    text3:'Worked with DOM manipulation and event listeners to manage the color change of correctly clicked boxes, enabling advancement to the next round. Additionally, incorrect clicks triggered the reset of marked boxes to their default color, prompting users to select numbers in ascending order once more.',
-    text4:'Implemented a counter and score feature to add challenge and provide users with feedback on their points earned within the timeframe.',
-    text5:'Also worked on the layout using mainly CSS and Flexbox',
-    text6:'Technologies used: HTML5,CSS,JavaScript,Git',
-  },
-  {
-    id: nanoid(),
-    img: cMail,
-    url: 'https://2023-jul-cmail.dev.io-academy.uk/',
-    gitUrl: 'https://github.com/iO-Academy/2023-jul-cmail',
-    title: 'Email Client',
-    text: 'Project in React which emulates a real email client, enabling users to compose, send, and receive emails through an API',
-    text2:'Developed an email client with RESTful API integration for sending, composing, and receiving emails',
-    text3:'Implemented validation rules using Regex to ensure correct user input, including valid email addresses.',
-    text4:'Facilitated user navigation across sections like Inbox, Sent, and Deleted Emails, displaying relevant emails and enabling reading or marking as unread.',
-    text5:'Created desired layout using Bootstrap5 for a better user experience.',
-    text6:'Technologies used:React,RESTful API,GIT,Bootstrap5, HTML5.'
-  },
-  {
-    id: nanoid(),
     img: coshHomepage,
-    url: 'https://react-projects.netlify.app/',
-    github: 'https://github.com/john-smilga',
-    title: 'third project',
-    text: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores aperiam porro impedit tenetur quo hic omnis doloribus dolores enim deleniti.',
+    url: 'https://coshandjosmin.2023-joshb.dev.io-academy.uk/',
+    gitUrl: 'https://github.com/CosminDarius1/CoshAndJosminShop',
+    title: 'Cosh&Josmin',
+    text: 'Collaborative React e-commerce project allowing users to view products, add items to a basket, and simulate purchasing',
+    text2:'Worked on individual product page functionality, ensuring accurate display of item images corresponding to those clicked on the main page.',
+    text3:'Managed fetch requests to ensure accurate data display on the browser, fetching and presenting the correct individual item when clicked by the user.',
+    text4:"Implemented features on the individual item's page such as selecting the quantity option or 'Add the cart' button.",
+    text5:'Developed a Cart Page displaying added items with prices and quantities, featuring options for removing products and proceeding to payment with a "Pay Now" button.',
+    text6:'Technologies used:React, RESTful API, CSS, HTML, Git, Plesk'
   },
   {
     id: nanoid(),
@@ -151,8 +130,35 @@ export const projects = [
     text3:'Worked with Slim framework for efficient routing and error handling, including error codes and messages for API data access to clarify success and enhance user understanding.',
     text4:'Enabled project managers to oversee projects, assing team members, and monitor tasks.',
     text5:' Also utilised MySQL database for effective communication between PHP and MySQL, enabling seamless data management for API operations such as adding or deleting data on the frontend.',
-    text6:'Technologies used:PHP,Slim,MySQL,REST API,GIT'
+    text6:'Technologies used:PHP,Slim,MySQL,REST API,Git'
   },
+  {
+    id: nanoid(),
+    img: cMail,
+    url: 'https://2023-jul-cmail.dev.io-academy.uk/',
+    gitUrl: 'https://github.com/iO-Academy/2023-jul-cmail',
+    title: 'Email Client',
+    text: 'Project in React which emulates a real email client, enabling users to compose, send, and receive emails through an API',
+    text2:'Developed an email client with RESTful API integration for sending, composing, and receiving emails',
+    text3:'Implemented validation rules using Regex to ensure correct user input, including valid email addresses.',
+    text4:'Facilitated user navigation across sections like Inbox, Sent, and Deleted Emails, displaying relevant emails and enabling reading or marking as unread.',
+    text5:'Created desired layout using Bootstrap5 for a better user experience.',
+    text6:'Technologies used:React,RESTful API,Git,Bootstrap5, HTML5.'
+  },
+  {
+    id: nanoid(),
+    img: caterpillarImg,
+    url: 'https://2023-jul-caterpillar-countdown.dev.io-academy.uk/',
+    gitUrl: 'https://github.com/iO-Academy/jul-23-caterpillar-countdown',
+    title: 'Caterpillar Countdown',
+    text: 'JavaScript-based browser game for testing mental agility, where users click numbers in ascending order within a time limit.',
+    text2:'Implemented logic to generate 3 to 5 random numbers each time the player clicked the correct boxes in ascending order. This dynamic feature enhanced gameplay by offering varied challenges as players progressed.',
+    text3:'Worked with DOM manipulation and event listeners to manage the color change of correctly clicked boxes, enabling advancement to the next round. Additionally, incorrect clicks triggered the reset of marked boxes to their default color, prompting users to select numbers in ascending order once more.',
+    text4:'Implemented a counter and score feature to add challenge and provide users with feedback on their points earned within the timeframe.',
+    text5:'Also worked on the layout using mainly CSS and Flexbox',
+    text6:'Technologies used: HTML5,CSS,JavaScript,Git',
+  },
+ 
   {
     id: nanoid(),
     img: guessNr1,
@@ -164,6 +170,6 @@ export const projects = [
     text3:"Displayed feedback messages on the browser during gameplay, informing users if their guesses were too low or high compared to the correct answer.",
     text4:"Once user will guess correctly feedback message will be displayed and background color will change , also revealing the guessed number.",
     text5:'Added a "Play Again" button to reset game elements while retaining the Highscore display for enhanced user challenge and interaction.',
-    text6:'Technologies: JavaScript, CSS, HTML5,GIT'
+    text6:'Technologies: JavaScript, CSS, HTML5,Git'
   },
 ];
