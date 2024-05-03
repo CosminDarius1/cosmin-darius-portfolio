@@ -101,10 +101,10 @@ export const projects = [
     title: 'Academy Portal',
     text: 'A collaborative full-stack project at iO Academy, where students contribute by implementing new features and fixing bugs.',
     text2:'My primary task involved enhancing security by enabling Admins to lock specific fields, preventing unauthorized edits by students.',
-    text3:'Engaged with legacy code, I integrated new JavaScript and PHP code, ensuring compatibility with existing legacy code',
-    text4:'While working on the back-end, I adhered to the MVC design pattern architecture',
-    text5:'Incorporated Continous Integration practices using CircleCI.This enabled real-time error detection, ensuring smooth development and deployment processes',
-    text6:'Technologies used: JavaScript, PHP, MySQL, MVC,Git,CircleCI,HTML5, Boostrap3'
+    text3:'Engaged with legacy code, I integrated new JavaScript and PHP code, ensuring compatibility with existing legacy code.',
+    text4:'While working on the back-end, I adhered to the MVC design pattern architecture.',
+    text5:'Incorporated Continous Integration practices using CircleCI.This enabled real-time error detection, ensuring smooth development and deployment processes.',
+    text6:'Technologies used: JavaScript, PHP, MySQL, MVC,Git,CircleCI,HTML5, Boostrap3.'
   },
   {
     id: nanoid(),
@@ -113,11 +113,11 @@ export const projects = [
     gitUrl: 'https://github.com/iO-Academy/jul-23-caterpillar-countdown',
     title: 'Caterpillar Countdown',
     text: 'JavaScript-based browser game for testing mental agility, where users click numbers in ascending order within a time limit.',
-    text2:'Implemented logic to generate 3 to 5 random numbers each time the player clicked the correct boxes in ascending order. This dynamic feature enhanced gameplay by offering varied challenges as players progressed',
+    text2:'Implemented logic to generate 3 to 5 random numbers each time the player clicked the correct boxes in ascending order. This dynamic feature enhanced gameplay by offering varied challenges as players progressed.',
     text3:'Worked with DOM manipulation and event listeners to manage the color change of correctly clicked boxes, enabling advancement to the next round. Additionally, incorrect clicks triggered the reset of marked boxes to their default color, prompting users to select numbers in ascending order once more.',
-    text4:'Implemented a counter and score feature to add challenge and provide users with feedback on their points earned within the timeframe',
+    text4:'Implemented a counter and score feature to add challenge and provide users with feedback on their points earned within the timeframe.',
     text5:'Also worked on the layout using mainly CSS and Flexbox',
-    text6:'Techonologies used: HTML5,CSS,JavaScript,Git',
+    text6:'Technologies used: HTML5,CSS,JavaScript,Git',
   },
   {
     id: nanoid(),
@@ -128,9 +128,9 @@ export const projects = [
     text: 'Project in React which emulates a real email client, enabling users to compose, send, and receive emails through an API',
     text2:'Developed an email client with RESTful API integration for sending, composing, and receiving emails',
     text3:'Implemented validation rules using Regex to ensure correct user input, including valid email addresses.',
-    text4:'Facilitated user navigation across sections like Inbox, Sent, and Deleted Emails, displaying relevant emails and enabling reading or marking as unread',
-    text5:'Created desired layout using Bootstrap5 for a better user experience',
-    text6:'Technologies used:React,RESTful API,GIT,Bootstrap5, HTML5'
+    text4:'Facilitated user navigation across sections like Inbox, Sent, and Deleted Emails, displaying relevant emails and enabling reading or marking as unread.',
+    text5:'Created desired layout using Bootstrap5 for a better user experience.',
+    text6:'Technologies used:React,RESTful API,GIT,Bootstrap5, HTML5.'
   },
   {
     id: nanoid(),
@@ -143,17 +143,27 @@ export const projects = [
   {
     id: nanoid(),
     img: phpProject,
-    url: 'https://react-projects.netlify.app/',
-    github: 'https://github.com/john-smilga',
-    title: 'third project',
-    text: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores aperiam porro impedit tenetur quo hic omnis doloribus dolores enim deleniti.',
+    url: 'https://2023-jul-project-management-api.dev.io-academy.uk/projects.php',
+    gitUrl: 'https://github.com/iO-Academy/jul-2023-project-management-API',
+    title: 'Project Management App',
+    text: 'Trello or Jira similar app for effective project management',
+    text2:'Utilised PHP OOP to architect a robust REST API for efficient data flow between front-end and back-end.',
+    text3:'Worked with Slim framework for efficient routing and error handling, including error codes and messages for API data access to clarify success and enhance user understanding.',
+    text4:'Enabled project managers to oversee projects, assing team members, and monitor tasks.',
+    text5:' Also utilised MySQL database for effective communication between PHP and MySQL, enabling seamless data management for API operations such as adding or deleting data on the frontend.',
+    text6:'Technologies used:PHP,Slim,MySQL,REST API,GIT'
   },
   {
     id: nanoid(),
     img: guessNr1,
-    url: 'https://react-projects.netlify.app/',
-    github: 'https://github.com/john-smilga',
-    title: 'third project',
-    text: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores aperiam porro impedit tenetur quo hic omnis doloribus dolores enim deleniti.',
+    url: 'https://cosmindarius1.github.io/Guess-my-number-project/',
+    gitUrl: 'https://github.com/CosminDarius1/Guess-my-number-project',
+    title: 'Guess My Number app',
+    text: 'JavaScript number-based game where users engage by guessing a randomly generated number within the range of 1 to 20.',
+    text2:'Implemented JavaScript logic for generating numbers,also validation rules added, limiting users to 20 attempts to guess the generated number.',
+    text3:"Displayed feedback messages on the browser during gameplay, informing users if their guesses were too low or high compared to the correct answer.",
+    text4:"Once user will guess correctly feedback message will be displayed and background color will change , also revealing the guessed number.",
+    text5:'Added a "Play Again" button to reset game elements while retaining the Highscore display for enhanced user challenge and interaction.',
+    text6:'Technologies: JavaScript, CSS, HTML5,GIT'
   },
 ];
