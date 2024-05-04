@@ -8,6 +8,7 @@ const [formData, setformData] = useState({
   email:'',
   message:''
 });
+const [messageSent, setMessageSent] = useState(false);
 
 const handleChange = (e) => {
   const {name, value} = e.target;
@@ -17,15 +18,40 @@ const handleChange = (e) => {
   });
 };
 
-const handleSubmit = (e) => {
+const handleSubmit = async (e) => {
   e.preventDefault();
-  console.log(formData);
-}
+  try{
+    const response = await fetch(`http://localhost:5000/api/send-email`, {
+      method:'POST',
+      headers: {
+        'Content-Type':'application/json',
+      },
+      body:JSON.stringify(formData),
+    });
+    if (response.ok) {
+      console.log('Message has been sent');
+      setMessageSent(true)
+    } else {
+      console.error('Failed to send message')
+    }
+  } catch (error) {
+    console.error('Error sending message:', error)
+  }
+};
 
   return (
     <section className='bg-black py-20 align-element' id='contact'>
       <SectionTitle text='Contact'/>
       <article>
+        {messageSent ? (
+          <div className="text-center">
+          <p className='text-green-500 text-2xl'>Message has been sent successfully</p>
+          <button className="mt-3 bg-orange-500 hover:bg-slate-200 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center" onClick={() => {
+            setMessageSent(false);
+            setformData({ name: '', email: '', message: '' });
+          }}>Write Another Message</button>
+        </div>
+        ) : (
           <form onSubmit={handleSubmit}>
         <div className='py-2'>
             <label htmlFor='name' className='text-orange-500 text-xl'>Name:</label>
@@ -39,8 +65,9 @@ const handleSubmit = (e) => {
             <label htmlFor='message' className='text-orange-500 text-xl'>Message:</label>
             <textarea className='w-full h-32 text-lg bg-black text-slate-200 border border-slate-200 rounded'id='message' name='message' value={formData.message} onChange={handleChange} required/>
         </div>
-        <button class="bg-orange-500 hover:bg-slate-200 text-gray-800 font-bold  py-2 px-4 rounded inline-flex items-center" type='submit'>Send</button>
-          </form>
+        <button class="bg-orange-500 hover:bg-slate-200 text-gray-800 font-bold  py-2 px-4 rounded inline-flex items-center" type='submit' onSubmit={handleSubmit}>Send</button>
+        
+          </form>)}
       </article>
     </section>
   )
