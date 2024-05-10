@@ -23,9 +23,16 @@ const handleChange = (e) => {
 
 const handleSubmit = async (e) => {
   e.preventDefault();
+  const templateParams = {
+    name:formData.name,
+    email:formData.email,
+    message:formData.message,
+  }
   emailjs.sendForm('service_5i35r4q','template_9k4wdad',form.current, 
-    '-YIpT6TOMzk6JbUn7').then(() => {
+    '-YIpT6TOMzk6JbUn7', templateParams).then(() => {
     console.log('Success');
+    setMessageSent(true);
+    setformData({name: '',email: '' ,message: ''})
   }, (error) => {
     console.log('Failed...',error.text);
   },
