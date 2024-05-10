@@ -1,5 +1,6 @@
-import React, { useState } from 'react'
+import React, { useRef, useState } from 'react'
 import SectionTitle from './SectionTitle'
+import emailjs from 'emailjs-com'
 
 const Contact = () => {
 
@@ -8,6 +9,7 @@ const [formData, setformData] = useState({
   email:'',
   message:''
 });
+const form = useRef();
 const [messageSent, setMessageSent] = useState(false);
 
 const handleChange = (e) => {
@@ -18,25 +20,16 @@ const handleChange = (e) => {
   });
 };
 
+
 const handleSubmit = async (e) => {
   e.preventDefault();
-  try{
-    const response = await fetch(`http://localhost:5000/api/send-email`, {
-      method:'POST',
-      headers: {
-        'Content-Type':'application/json',
-      },
-      body:JSON.stringify(formData),
-    });
-    if (response.ok) {
-      console.log('Message has been sent');
-      setMessageSent(true)
-    } else {
-      console.error('Failed to send message')
-    }
-  } catch (error) {
-    console.error('Error sending message:', error)
-  }
+  emailjs.sendForm('service_5i35r4q','template_9k4wdad',form.current, 
+    '-YIpT6TOMzk6JbUn7').then(() => {
+    console.log('Success');
+  }, (error) => {
+    console.log('Failed...',error.text);
+  },
+  )
 };
 
   return (
@@ -52,7 +45,7 @@ const handleSubmit = async (e) => {
           }}>Write Another Message</button>
         </div>
         ) : (
-          <form onSubmit={handleSubmit}>
+          <form ref={form} onSubmit={handleSubmit}>
         <div className='py-2'>
             <label htmlFor='name' className='text-orange-500 text-xl'>Name:</label>
             <input className='w-full h-8 text-lg bg-black text-slate-200 border border-slate-200 rounded' type='text' id='name' name='name' value={formData.name} onChange={handleChange} required/>
