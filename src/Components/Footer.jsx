@@ -9,9 +9,9 @@ const Footer = () => {
       </div>
       <div className='text-orange-500 flex flex-col md:flex-row items-center space-x-0 md:space-x-2 space-y-2 md:space-y-0 px-3'> <span className='mr-2 text-base md:text-lg'>Let's connect!</span>
       <div className='flex space-x-2'>
-        <a href='#'><FaGithubSquare className='h-8 w-8 text-slate-200 hover:text-orange-500 duration-300'/> </a>
-        <a href='#'><FaLinkedin className='h-8 w-8 text-slate-200 hover:text-orange-500 duration-300'/></a>
-        <a href='#'><FaEnvelope className='h-8 w-8 text-slate-200 hover:text-orange-500 duration-300'/></a>
+        <a href='https://github.com/CosminDarius1'><FaGithubSquare className='h-8 w-8 text-slate-200 hover:text-orange-500 duration-300'/> </a>
+        <a href='https://www.linkedin.com/in/cosmin-darius-sas-5458b91b4/'><FaLinkedin className='h-8 w-8 text-slate-200 hover:text-orange-500 duration-300'/></a>
+        <a href='mailto:cosmindariussas@gmail.com'><FaEnvelope className='h-8 w-8 text-slate-200 hover:text-orange-500 duration-300'/></a>
       </div>
       </div>
     </section>
