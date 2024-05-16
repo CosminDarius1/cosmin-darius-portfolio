@@ -108,6 +108,7 @@ const Navbar = () => {
                                             <a
                                                 key={id}
                                                 href={href}
+                                                onClick={toggleMenu}
                                                 className="block capitalize text-4xl tracking-wide text-black hover:text-white"
                                             >
                                                 {text}
