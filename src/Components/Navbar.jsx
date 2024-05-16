@@ -38,6 +38,27 @@ const Navbar = () => {
         exit: { scaleY: 0, opacity: 0, originY: 0, transition: { duration: 0.5 } },
     };
 
+    const navLinkVariants = {
+        initial: { opacity: 0, y: 20 },
+        animate: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } },
+    };
+
+    const containerVariants = {
+        initial: {
+            transition: {
+                staggerChildren: 0.09,
+                staggerDirection: -1,
+            },
+        },
+        animate: {
+            transition: {
+                delayChildren: 0.3,
+                staggerChildren: 0.09,
+                staggerDirection: 1,
+            },
+        },
+    };
+
     return (
         <nav className="bg-black font-bold text-orange-500 font-sans flex justify-between items-center px-8 py-4 relative">
             <div>
@@ -101,21 +122,27 @@ const Navbar = () => {
                                 variants={menuVariants}
                                 className="fixed left-0 top-0 w-full h-full bg-yellow text-white flex justify-center items-center"
                             >
-                                <div className="bg-orange-500 bg-opacity-75 shadow-lg px-4 w-full h-full flex justify-center flex-col items-center">
+                                <motion.div
+                                    className="bg-orange-500 bg-opacity-75 shadow-lg px-4 w-full h-full flex justify-center flex-col items-center"
+                                    variants={containerVariants}
+                                    initial="initial"
+                                    animate="animate"
+                                >
                                     {links.map((link) => {
                                         const { id, href, text } = link;
                                         return (
-                                            <a
+                                            <motion.a
                                                 key={id}
                                                 href={href}
                                                 onClick={toggleMenu}
                                                 className="block capitalize text-4xl tracking-wide text-black hover:text-white"
+                                                variants={navLinkVariants}
                                             >
                                                 {text}
-                                            </a>
+                                            </motion.a>
                                         );
                                     })}
-                                </div>
+                                </motion.div>
                             </motion.div>
                         )}
                     </AnimatePresence>
