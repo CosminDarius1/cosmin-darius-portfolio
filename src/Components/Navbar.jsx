@@ -71,7 +71,7 @@ const Navbar = () => {
                         <a
                             key={id}
                             href={href}
-                            className="capitalize text-lg tracking-wide hover:text-slate-200 duration-300 px-2"
+                            className="capitalize text-xl tracking-wide hover:text-slate-200 duration-300 px-2"
                         >
                             {text}
                         </a>
@@ -135,7 +135,7 @@ const Navbar = () => {
                                                 key={id}
                                                 href={href}
                                                 onClick={toggleMenu}
-                                                className="block capitalize text-4xl tracking-wide text-black hover:text-white"
+                                                className="block capitalize text-5xl tracking-wide text-black hover:text-white py-4"
                                                 variants={navLinkVariants}
                                             >
                                                 {text}
