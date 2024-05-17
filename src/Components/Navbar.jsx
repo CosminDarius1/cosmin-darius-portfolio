@@ -7,6 +7,7 @@ const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const menuRef = useRef(null);
     const [active, setActive] = useState(false);
+    const [activeLink, setActiveLink] = useState(null);
 
     const toggleMenu = () => {
         setIsMenuOpen((prevOpen) => !prevOpen);
@@ -18,7 +19,7 @@ const Navbar = () => {
         toggleMenu();
     };
 
-    const handleCLickOutside = (e) => {
+    const handleClickOutside = (e) => {
         if (!menuRef.current || !menuRef.current.contains(e.target)) {
             setIsMenuOpen(false);
             setActive(false);
@@ -26,9 +27,9 @@ const Navbar = () => {
     };
 
     useEffect(() => {
-        document.addEventListener('click', handleCLickOutside);
+        document.addEventListener('click', handleClickOutside);
         return () => {
-            document.removeEventListener('click', handleCLickOutside);
+            document.removeEventListener('click', handleClickOutside);
         };
     }, []);
 
@@ -68,13 +69,26 @@ const Navbar = () => {
                 {links.map((link) => {
                     const { id, href, text } = link;
                     return (
-                        <a
-                            key={id}
-                            href={href}
-                            className="capitalize text-xl tracking-wide hover:text-slate-200 duration-300 px-2"
-                        >
-                            {text}
-                        </a>
+                            <motion.a
+                                key={id}
+                                href={href}
+                                className="relative capitalize text-xl tracking-wide hover:text-slate-200 duration-300 px-2"
+                                whileHover={{scaleX: 1}}
+                                onMouseEnter={() => setActiveLink(id)}
+                                onMouseLeave={() => setActiveLink(null)}
+                            >
+                                {text}
+                                {activeLink === id && (
+                                    <motion.div
+                                    className="absolute left-0 bottom-0 w-full h-0.5 bg-orange-500"
+                                     initial={{ scaleX: 0 }}
+                                     animate={{ scaleX: 1 }}
+                                     exit={{scaleX:0}}
+                                    transition={{ duration: 0.3 }}
+                                    style={{transformOrigin: 'left', pointerEvents:'none'}}
+                                        />
+                                )}
+                            </motion.a>
                     );
                 })}
             </div>
@@ -120,7 +134,7 @@ const Navbar = () => {
                                 animate="animate"
                                 exit="exit"
                                 variants={menuVariants}
-                                className="fixed left-0 top-0 w-full h-full bg-yellow text-white flex justify-center items-center"
+                                className="fixed left-0 top-0 w-full h-full text-white flex justify-center items-center"
                             >
                                 <motion.div
                                     className="bg-orange-500 bg-opacity-75 shadow-lg px-4 w-full h-full flex justify-center flex-col items-center"
@@ -153,3 +167,5 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+
