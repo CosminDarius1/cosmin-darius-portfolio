@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import heroImg from '../assets/heroImg.jpg';
 import { FaGithubSquare, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 import Spinner from './Spinner';
+import CV from '../assets/cosminsascv.pdf'
 
 const Hero = () => {
     const [loaded, setLoaded] = useState(false);
@@ -49,7 +50,7 @@ const Hero = () => {
                                 <FaEnvelope className='h-10 w-10 text-slate-200 hover:text-orange-500 duration-300' />
                             </a>
                         </div>
-                        <a href='/cosmindariussas.pdf' download className="bg-orange-500 hover:bg-slate-200 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center justify-center">
+                        <a href={CV} download className="bg-orange-500 hover:bg-slate-200 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center justify-center">
                             <svg className="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z" /></svg>
                             <span>Download CV</span>
                         </a>
