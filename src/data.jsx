@@ -5,8 +5,7 @@ import academyServer from './assets/academyserver.png';
 import caterpillarImg from '../src/assets/caterpillar.png';
 import caterpillarImg2 from '../src/assets/caterpillar2.png';
 import cMail from '../src/assets/cmail.png';
-import coshHomepage from '../src/assets/coshhomepage.png';
-import coshIndividual from '../src/assets/coshindividual.png'
+import eStore from '../src/assets/estore.png'
 import guessNr1 from '../src/assets/guess1.png';
 import guessNr2 from '../src/assets/guess2.png'
 import phpProject from '../src/assets/phpproject.png';
@@ -108,16 +107,21 @@ export const projects = [
   },
   {
     id: nanoid(),
-    img: coshHomepage,
-    url: 'https://coshandjosmin.2023-joshb.dev.io-academy.uk/',
-    gitUrl: 'https://github.com/CosminDarius1/CoshAndJosminShop',
-    title: 'Cosh&Josmin',
-    text: 'Collaborative React e-commerce project allowing users to view products, add items to a basket, and simulate purchasing',
-    text2:'Worked on individual product page functionality, ensuring accurate display of item images corresponding to those clicked on the main page.',
-    text3:'Managed fetch requests to ensure accurate data display on the browser, fetching and presenting the correct individual item when clicked by the user.',
-    text4:"Implemented features on the individual item's page such as selecting the quantity option or 'Add the cart' button.",
-    text5:'Developed a Cart Page displaying added items with prices and quantities, featuring options for removing products and proceeding to payment with a "Pay Now" button.',
-    text6:'Technologies used:React, RESTful API, CSS, HTML, Git, Plesk'
+    img: eStore,
+    url: 'https://e-store-8sstopedn-cosmins-projects-2425edf3.vercel.app/',
+    gitUrl: 'https://github.com/CosminDarius1/e-store',
+    title: 'e-store',
+    text: 'A full-stack e-commerce application built with Next.js, TypeScript, and Tailwind CSS. It features a clean, responsive UI using Shadcn components and integrates with Supabase and Prisma for the backend',
+
+    text2:'Worked on a Seamless Shopping Experience where the user can browse dynamic product listings with variations, add/remove items to a cart, and complete purchases securely with Stripe-powered checkout.',
+
+    text3:'Implemented Robust Authentication & Data Management using Secure user authentication via Clerk, real-time database management with Supabase and Prisma, and strong data validation using Zod.',
+
+    text4:"Modern & Responsive UI: Clean, mobile-friendly design using Tailwind CSS and Shadcn UI for a smooth user experience.",
+    
+    text5:'Optimized Performance & Deployment: Social sharing via ReactShare, fast load times with Next.js optimizations, and seamless deployment on Vercel',
+    
+    text6:'Technologies used:Next.JS,TypseScript, TailwindCSS,Shadcn UI, Supabase(PostgreSQL + Prisma), Clerk, Zod, Stripe, ReactShare, Vercel, Github'
   },
   {
     id: nanoid(),
